@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 6 - Basic JavaScript Event Handling and DOM</title>
+	<style type="text/css">
+		.center {
+			text-align: center;
+		}
+		#container {
+			width: 200px;
+			margin: 10px auto 0;
+		}
+		#entryinput {
+			width: 50%;
+		}
+		#entrybutton {
+			width: 100px;
+			text-align: center;
+			color: #fff;
+			background-color: #c00;
+			padding: 2em 0;
+			margin: 20px auto;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="center">ITMD-361 - Lab 6 - Basic JavaScript Event Handling and DOM</h1>
+	<h2 class="center">Dartor Bolo </h2>
+	<h3 class="center">dbolo@hawk.iit.edu</h3>
+	<div id="container">
+		<input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
+		<div id="entrybutton" onclick="inform()">Alert Me</div>
+		<h2 id="textoutput" class="center">Display result here</h2>
+	</div>
+	<script type="text/javascript">
+    
+    function inform()
+    {
+      var userinput = document.getElementById('entryinput').value;
+      alert('Mr. Dartor Bolo: ' + userinput);
+      document.getElementById('textoutput').innerHTML = userinput;
+    }
+	</script>
+</body>
+</html>
